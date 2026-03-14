@@ -1,120 +1,124 @@
-# customer-shopping-behaviour-analysis
+# Customer Shopping Behaviour Analysis
 
-📊 HR Analytics: Employee Attrition Analysis
-🔍 Project Overview
+## Project Overview
+This project analyzes customer shopping behaviour using a retail transaction dataset. The objective is to understand purchasing patterns, product preferences, and customer spending behaviour to generate meaningful business insights.
 
-This project analyzes employee data from the HR Analytics dataset to uncover insights related to employee attrition, salary distribution, and workforce trends. The objective is to perform end-to-end data analysis — from data cleaning in Python to business intelligence using SQL and visualization tools.
+---
 
-The analysis helps HR teams make data-driven decisions to improve employee retention and organizational efficiency.
+## Dataset Summary
 
-📁 Dataset Summary
+- Total Records: 3,900
+- Total Columns: 18
 
-Dataset: HR_Analytics.csv
+### Key Features
 
-Type: Structured HR dataset
+Customer Demographics
+- Age
+- Gender
+- Location
+- Subscription Status
 
-Key Features:
+Purchase Information
+- Item Purchased
+- Category
+- Purchase Amount
+- Season
+- Size
+- Color
 
-Employee demographics
+Shopping Behaviour
+- Discount Applied
+- Promo Code Used
+- Previous Purchases
+- Frequency of Purchases
+- Review Rating
+- Shipping Type
 
-Department and Job Role
+---
 
-Monthly Income
+## Tools & Technologies
 
-WorkLifeBalance
+- Python
+- Pandas
+- MySQL
+- SQL
+- Power BI
+- Matplotlib
 
-YearsWithCurrManager
+---
 
-Attrition status
+## Data Cleaning & Preparation
 
-The dataset contained some missing values which were handled during the data preprocessing stage.
+The dataset required several preprocessing steps:
 
-🐍 Exploratory Data Analysis (Python)
+- Checked missing values in the dataset
+- Filled missing values in the **Review Rating** column using median values
+- Standardized column names using snake_case format
+- Verified data consistency for discount and promo code columns
 
-Data preparation and cleaning were performed using Python (Pandas):
+---
 
-Data Loading: Imported dataset using pandas
+## Exploratory Data Analysis
 
-Initial Exploration: Used info() and describe() for structure and statistics
+Using Python, several patterns and trends were analyzed:
 
-Missing Data Handling: Imputed missing values in YearsWithCurrManager using group-wise median
+- Customer purchasing patterns
+- Most popular product categories
+- Customer subscription behaviour
+- Impact of discounts on purchasing
+- Seasonal sales trends
 
-Column Standardization: Converted column names to lowercase
+---
 
-Data Cleaning: Removed inconsistent or null-heavy rows
+## SQL Analysis
 
-Database Integration: Loaded cleaned data into MySQL using SQLAlchemy
+The dataset was stored in a MySQL database and analyzed using SQL queries.
 
-🗄️ SQL Business Analysis
+Key analysis performed:
 
-Structured SQL queries were written to extract business insights:
+- Revenue comparison by gender
+- High-spending customers using discounts
+- Top 5 products based on review ratings
+- Shipping type comparison
+- Subscriber vs non-subscriber spending analysis
+- Discount dependent products
+- Customer segmentation
+- Top products by category
+- Repeat buyer analysis
+- Revenue contribution by age group
 
-Employee distribution by gender
+---
 
-High-income employee detection
+## Key Insights
 
-Top 5 highest paid employees
+- Certain product categories generated higher revenue.
+- Customers using discounts still made high-value purchases.
+- Subscription customers showed higher purchase frequency.
+- Seasonal trends affected product demand.
 
-Work-life balance vs income analysis
+---
 
-Department-wise attrition analysis
+## Project Structure
 
-Attrition-prone job roles
+customer-shopping-behaviour-analysis
 
-Employee tenure segmentation
+dataset  
+python-analysis  
+sql-queries  
+powerbi-dashboard  
+README.md  
 
-Top paid employee per department
+---
 
-Tenure vs attrition relationship
+## Author
 
-Income distribution by work-life balance
+Vivek Patil
 
-These queries transformed raw HR data into actionable intelligence.
+GitHub  
+https://github.com/VivekPatil07-available
 
-📊 Power BI Dashboard
+Portfolio  
+https://vivekpatil07-available.github.io/Portfolio07
 
-An interactive dashboard was built in Power BI to visualize:
-
-Attrition trends
-
-Department analysis
-
-Salary distribution
-
-Workforce segmentation
-
-The dashboard enables quick and intuitive HR decision-making.
-
-💡 Business Recommendations
-
-Focus on high-attrition departments
-
-Improve work-life balance initiatives
-
-Benchmark salaries for critical roles
-
-Strengthen manager–employee engagement
-
-Implement early attrition warning dashboards
-
-Use data-driven HR decision processes
-
-🛠️ Tech Stack
-
-Python (Pandas)
-
-MySQL
-
-SQLAlchemy
-
-Power BI
-
-VS Code
-
-🚀 Project Workflow
-Data Collection → Data Cleaning (Python) → Database Loading (MySQL)
-→ SQL Analysis → Power BI Dashboard → Business Insights
-📌 Author
-
-Vivek
-Aspiring Data Analyst
+LinkedIn  
+https://linkedin.com/in/vivek-patil-b60a45298
