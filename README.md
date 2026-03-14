@@ -1,4 +1,4 @@
-# customer_behaviour_analysis
+# customer-shopping-behaviour-analysis
 
 📊 HR Analytics: Employee Attrition Analysis
 🔍 Project Overview
